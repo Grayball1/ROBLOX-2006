@@ -1,0 +1,602 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/Forum/Roblox.css">
+		<title>ROBLOX Forum</title>
+    <link rel="stylesheet" href="/Forum/10/default.css" type="text/css"/>
+	</head>
+	<body leftmargin="0" bottommargin="0" rightmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+		<form name="_ctl0" method="post" action="ShowPost.aspx?PostID=10" id="_ctl0">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTgyNzY2NTgyD2QWAgIDD2QWAmYPZBYGAgEPZBYEAgMPDxYGHghJbWFnZVVybAUcfi9pbWFnZXMvbG9nb19wdXJlX2FscGhhLnBuZx4LQ29tbWFuZE5hbWVlHg9Db21tYW5kQXJndW1lbnRkZGQCBg8WAh4HVmlzaWJsZWhkAg8PZBYCAgMPZBYCAgMPZBYCZg9kFgYCBQ8QZGQWAWZkAgcPEGRkFgFmZAIKD2QWAmYPZBYCZg9kFgJmD2QWAmYPDxYCHgRUZXh0BQtQYWdlIDEgb2YgMWRkAhMPDxYCHwNoZGRkAPL1bg1GPO3x5dKnwj1StJRzH6k="/>
+
+
+    <script language="javascript">
+    var timeoutCookie;
+    var menuPopupCookie;
+
+    function menuOver(id)
+    {
+        if ( menuPopupCookie != null )
+        {
+            window.clearTimeout(menuPopupCookie);
+            menuPopupCookie = null;
+        }
+        
+        if ( event.srcElement.className != 'linkMenuSink' )
+        {
+            return;
+        }
+        
+        var menuX = (event.clientX - (event.x + 2)) + document.body.scrollLeft;
+        var menuY = (event.clientY - event.y) + document.body.scrollTop + 16;
+        
+        event.srcElement.onmouseleave = menuPopCancel;
+        menuPopupCookie = window.setTimeout('menuPop(\'' + id + '\', ' + menuX + ', ' + menuY + ');', 1000);
+    }
+    
+    function menuPopCancel()
+    {
+        if ( menuPopupCookie != null )
+        {
+            window.clearTimeout(menuPopupCookie);
+            menuPopupCookie = null;
+        }
+    }
+    
+    function menuPop(id, x, y)
+    {
+        menuPopupCookie = null;
+        var menu = document.all.item(id);
+        
+        if ( menu != null )
+        {
+            menu.style.left = x;
+            menu.style.top = y;
+            menu.style.zIndex = 100;
+            menu.style.display = 'block';
+            menu.onmouseleave = menuOut;
+            menu.onmouseenter = menuEnter;
+        }
+    }
+
+    function menuEnter()
+    {
+        if ( timeoutCookie != null )
+        {
+            window.clearTimeout(timeoutCookie);
+            timeoutCookie = null;
+        }
+    }
+
+    function menuSourceLeave(id)
+    {
+        timeoutCookie = window.setTimeout('menuClose(\'' + id + '\');', 100);
+    }
+
+    function menuClose(id)
+    {
+        var menu = document.all.item(id);
+        if ( menu != null )
+        {
+            menu.style.zIndex = -1;
+            menu.style.display = 'none';
+        }
+    }
+
+    function menuOut()
+    {
+        var menu = event.srcElement;
+        if ( menu != null )
+        {
+            menu.style.zIndex = -1;
+            menu.style.display = 'none';
+        }
+    }
+    </script>
+
+<div align="center">
+	<table cellspacing="0" cellpadding="0" width="800">
+		<tbody><tr>
+			<td style="CLEAR: none; BORDER-RIGHT: black 1px solid; BORDER-LEFT: black 1px solid" class="Header" align="center">
+				<table id="_ctl0_Panel2" class="Banner" cellpadding="0" cellspacing="0" border="0" height="72" width="800" background="/banner.png"><tbody><tr><td>
+	
+					<table cellspacing="0" cellpadding="0" width="100%">
+						<tbody><tr>
+							<td valign="bottom" align="left" width="250">
+								<a id="_ctl0_HyperLink2" class="BannerText" href="/">ROBLOX.com</a></td>
+							<td align="center" width="300">
+					
+							<td align="right" width="250"><span id="_ctl0_SpanSignUp" class="BannerText">
+									<a id="_ctl0_HyperlinkSignIn" class="BannerText" href="/">Sign Up</a></span></td>
+						</tr>
+					</tbody></table>
+				
+</td></tr></tbody></table>
+				
+</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 0px; BORDER-LEFT: black 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: black 1px solid; BACKGROUND-COLOR: lightsteelblue">
+				<span class="MenuItem">
+					<a id="_ctl1_HyperlinkHome" class="MenuItem" href="/">Home</a>&nbsp;|&nbsp;<a id="_ctl1_HyperLink10" class="MenuItem" href="/Browse/Places/">Browse</a>
+                        |&nbsp;<a id="_ctl1_HyperLink11" class="MenuItem" href="/Forum">Forum</a>&nbsp;|&nbsp;<a id="_ctl1_Hyperlink1" class="MenuItem" href="/info/">Info</a>
+					
+				</span>
+			</td>
+		</tr>
+		<tr>
+			<td style="PADDING-TOP: 16px">
+				<div style="TEXT-ALIGN: center">
+					<p>
+						
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+					<td>
+						</td>
+				</tr>
+				<tr valign="bottom">
+					<td>
+						<table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+							<tr valign="top">
+								<!-- left column -->
+								<td>&nbsp; &nbsp; &nbsp;</td>
+								<!-- center column -->
+								<td id="_ctl1_CenterColumn" width="95%" class="CenterColumn">
+									<br>
+									<span id="_ctl1_Navigationmenu1">
+<table width="100%" cellspacing="1" cellpadding="0">
+	<tr>
+		<td align="right" valign="middle">
+			<a id="_ctl1_Navigationmenu1__ctl0_HomeMenu" class="menuTextLink" href="/Forum/"><img src="/Forum/10/icon_mini_home.gif" border="0">Home &nbsp;</a>
+			<a id="_ctl1_Navigationmenu1__ctl0_SearchMenu" class="menuTextLink" href="/Forum/10/Forum/Search/default.aspx"><img src="/Forum/10/icon_mini_search.gif" border="0">Search &nbsp;</a>
+			
+			
+			<a id="_ctl1_Navigationmenu1__ctl0_RegisterMenu" class="menuTextLink" href="/signup.html"><img src="/Forum/10/icon_mini_register.gif" border="0">Register &nbsp;</a>
+			<a id="_ctl1_Navigationmenu1__ctl0_MemberListMenu" class="menuTextLink" href="/Forum/allusers/"><img src="/Forum/10/icon_mini_memberlist.gif" border="0">Member List &nbsp;</a>
+			
+			
+			
+		</td>
+	</tr>
+</table>
+</span>
+									<span id="_ctl1_PostView1">
+<table cellpadding="0" width="100%">
+  <tr>
+    <td align="left" colspan="2"><span id="_ctl1_PostView1__ctl0_Whereami1" name="Whereami1">
+<table cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td valign="top" align="left" width="1px">
+            <nobr>
+                
+            </nobr>
+        </td>
+        <td id="_ctl1_PostView1__ctl0_Whereami1__ctl0_ForumGroupMenu" class="popupMenuSink" valign="top" align="left" width="1px">
+            <nobr>
+                
+                <a id="_ctl1_PostView1__ctl0_Whereami1__ctl0_LinkForumGroup" class="linkMenuSink" href="/not_found.html">ROBLOX</a>
+            </nobr>
+        </td>
+
+        <td id="_ctl1_PostView1__ctl0_Whereami1__ctl0_ForumMenu" class="popupMenuSink" valign="top" align="left" width="1px">
+            <nobr>
+                <span id="_ctl1_PostView1__ctl0_Whereami1__ctl0_ForumSeparator" class="normalTextSmallBold">&nbsp;&gt;</span>
+                <a id="_ctl1_PostView1__ctl0_Whereami1__ctl0_LinkForum" class="linkMenuSink" href="/not_found.html">Bug Reports (old)</a>
+            </nobr>
+        </td>
+
+        <td id="_ctl1_PostView1__ctl0_Whereami1__ctl0_PostMenu" class="popupMenuSink" valign="top" align="left" width="1px">
+            <nobr>
+                <span id="_ctl1_PostView1__ctl0_Whereami1__ctl0_PostSeparator" class="normalTextSmallBold">&nbsp;&gt;</span>
+                <a id="_ctl1_PostView1__ctl0_Whereami1__ctl0_LinkPost" class="linkMenuSink" href="/Forum/10/">Couldn't install on laptop from home</a>
+            </nobr>
+        </td>
+
+        <td valign="top" align="left" width="*">&nbsp;</td>
+    </tr>
+</table>
+
+<span id="_ctl1_PostView1__ctl0_Whereami1__ctl0_MenuScript"></span></span></td>
+  </tr>
+  <tr>
+    <td align="left" colspan="2">&nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" align="left">
+	<span class="normalTextSmallBold"></span>
+    </td>
+    <td valign="bottom" align="right"><span class="normalTextSmallBold">Display using: </span><select name="_ctl1:PostView1:_ctl0:DisplayMode" id="_ctl1_PostView1__ctl0_DisplayMode">
+	<option selected="selected" value="Flat">Flat View</option>
+	<option value="Threaded">Threaded View</option>
+
+</select>&nbsp;<select name="_ctl1:PostView1:_ctl0:SortOrder" id="_ctl1_PostView1__ctl0_SortOrder">
+	<option selected="selected" value="0">Oldest to newest</option>
+	<option value="1">Newest to oldest</option>
+
+</select>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><table id="_ctl1_PostView1__ctl0_PostList" class="tableBorder" cellspacing="1" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td class="forumHeaderBackgroundAlternate" colspan="2" height="20"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td align="left"></td><td align="right"><a class="linkSmallBold" href="javascript:__doPostBack('_ctl1$PostView1$_ctl0$PostList$_ctl0$_ctl2','')">Previous Thread</a>&nbsp;<span class="normalTextSmallBold">::</span>&nbsp;<a class="linkSmallBold" href="javascript:__doPostBack('_ctl1$PostView1$_ctl0$PostList$_ctl0$_ctl3','')">Next Thread</a>&nbsp;</td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<th class="tableHeaderText" align="left" height="25" width="100">&nbsp;Author</th><th class="tableHeaderText" align="left" width="85%">&nbsp;Thread: Couldn't install on laptop from home</th>
+	</tr><tr>
+		<td class="forumRow" nowrap="nowrap" valign="top" width="150"><table border="0">
+			<tr>
+				<td><img src="/Forum/10/user_IsOffline.gif" alt="David.Baszucki is not online. Last active: 6/16/2006 5:06:44 PM" border="0"/>&nbsp;<a class="normalTextSmallBold" href="/Forum/User/UserProfile.aspx?UserName=David.Baszucki">David.Baszucki</a><br></td>
+			</tr><tr>
+				<td><img src="/Forum/10/users_top25.gif" alt="Top 25 Poster" border="0"/></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Joined:</b> 01 Jul 2004</span></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Total Posts: </b>35</span></td>
+			</tr><tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table></td><td class="forumRow" valign="top"><table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td class="forumRowHighlight"><span class="normalTextSmallBold">Couldn't install on laptop from home<a name="10"/></span><br><span class="normalTextSmaller"> Posted: </span><span class="normalTextSmaller">12 Jul 2004 12:15 PM</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmall">Erik - 
+<br/>
+
+<br/>
+I wiped my old Roblox stuff and tried to do an install from roblox.com today at about 12:00 am.  The progress bar disappeared, and that was it.  Screen looked like before I tried - 
+<br/>
+
+<br/>
+Feel free to give me a call on this one if you want. 
+<br/>
+
+<br/>
+Also, I was not able to get any level images.</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmaller"></span></td>
+			</tr><tr>
+				<td height="2"></td>
+			</tr><tr>
+				<td colspan="2"><a href="">&amp;mode=flat"><img border="0" src="/Forum/10/newpost.gif"></a></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td class="forumAlternate" nowrap="nowrap" valign="top"><table border="0">
+			<tr>
+				<td><img src="Forum/skins/default/images/user_IsOffline.gif" alt="erik.cassel is not online. Last active: 6/5/2006 11:50:08 AM" border="0"/>&nbsp;<a class="normalTextSmallBold" href="/Forum/10/Forum/User/UserProfile.aspx?UserName=erik.cassel">erik.cassel</a><br></td>
+			</tr><tr>
+				<td><img src="/Forum/10/users_top25.gif" alt="Top 25 Poster" border="0"/></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Joined:</b> 02 Jul 2004</span></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Total Posts: </b>18</span></td>
+			</tr><tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table></td><td class="forumAlternate" valign="top"><table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td class="forumRowHighlight"><span class="normalTextSmallBold">Re: Couldn't install on laptop from home<a name="11"/></span><br><span class="normalTextSmaller"> Posted: </span><span class="normalTextSmaller">13 Jul 2004 04:04 PM</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmall">
+<br/>
+1) Browse to http://www.roblox.com/Client/voicewarmup.reg and open the file
+<br/>
+
+<br/>
+2) Try installing again
+<br/>
+
+<br/>
+3) Browser to &quot;%temp%&quot;
+<br/>
+
+<br/>
+4) e-mail me the most recent MSI*.LOG file.
+<br/>
+
+<br/>
+-Erik
+<br/>
+</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmaller"></span></td>
+			</tr><tr>
+				<td height="2"></td>
+			</tr><tr>
+				<td colspan="2"><a href="/Forum/10/Forum/AddPost.aspx?PostID=11&amp;mode=flat"><img border="0" src="/Forum/10/newpost.gif"></a></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td class="forumRow" nowrap="nowrap" valign="top" width="150"><table border="0">
+			<tr>
+				<td><img src="/Forum/10/user_IsOffline.gif" alt="qa is not online. Last active: 6/2/2006 11:01:06 AM" border="0"/>&nbsp;<a class="normalTextSmallBold" href="/Forum/User/UserProfile.aspx?UserName=qa">qa</a><br></td>
+			</tr><tr>
+				<td><img src="/Forum/10/users_top25.gif" alt="Top 25 Poster" border="0"/></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Joined:</b> 30 Jun 2004</span></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Total Posts: </b>9</span></td>
+			</tr><tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table></td><td class="forumRow" valign="top"><table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td class="forumRowHighlight"><span class="normalTextSmallBold">Re: Couldn't install on laptop from home<a name="12"/></span><br><span class="normalTextSmaller"> Posted: </span><span class="normalTextSmaller">13 Jul 2004 04:13 PM</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmall">reply test. Please ignore</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmaller"></span></td>
+			</tr><tr>
+				<td height="2"></td>
+			</tr><tr>
+				<td colspan="2"><a href=""><img border="0" src="/Forum/10/newpost.gif"></a></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td class="forumAlternate" nowrap="nowrap" valign="top"><table border="0">
+			<tr>
+				<td><img src="/Forum/10/user_IsOffline.gif" alt="qa is not online. Last active: 6/2/2006 11:01:06 AM" border="0"/>&nbsp;<a class="normalTextSmallBold" href="/Forum/10/Forum/User/UserProfile.aspx?UserName=qa">qa</a><br></td>
+			</tr><tr>
+				<td><img src="/Forum/10/users_top25.gif" alt="Top 25 Poster" border="0"/></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Joined:</b> 30 Jun 2004</span></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Total Posts: </b>9</span></td>
+			</tr><tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table></td><td class="forumAlternate" valign="top"><table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td class="forumRowHighlight"><span class="normalTextSmallBold">Re: Couldn't install on laptop from home<a name="13"/></span><br><span class="normalTextSmaller"> Posted: </span><span class="normalTextSmaller">13 Jul 2004 04:16 PM</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmall">testing again</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmaller"></span></td>
+			</tr><tr>
+				<td height="2"></td>
+			</tr><tr>
+				<td colspan="2"><a href="/Forum/10/Forum/AddPost.aspx?PostID=13&amp;mode=flat"><img border="0" src="/Forum/10/newpost.gif"></a></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td class="forumRow" nowrap="nowrap" valign="top" width="150"><table border="0">
+			<tr>
+				<td><img src="/Forum/10/user_IsOffline.gif" alt="qa is not online. Last active: 6/2/2006 11:01:06 AM" border="0"/>&nbsp;<a class="normalTextSmallBold" href="/Forum/10/Forum/User/UserProfile.aspx?UserName=qa">qa</a><br></td>
+			</tr><tr>
+				<td><img src="/Forum/10/users_top25.gif" alt="Top 25 Poster" border="0"/></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Joined:</b> 30 Jun 2004</span></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Total Posts: </b>9</span></td>
+			</tr><tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table></td><td class="forumRow" valign="top"><table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td class="forumRowHighlight"><span class="normalTextSmallBold">Re: Couldn't install on laptop from home<a name="14"/></span><br><span class="normalTextSmaller"> Posted: </span><span class="normalTextSmaller">13 Jul 2004 04:17 PM</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmall">and again</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmaller"></span></td>
+			</tr><tr>
+				<td height="2"></td>
+			</tr><tr>
+				<td colspan="2"><a href="/Forum/10/Forum/AddPost.aspx?PostID=14&amp;mode=flat"><img border="0" src="/Forum/10/newpost.gif"></a></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td class="forumAlternate" nowrap="nowrap" valign="top"><table border="0">
+			<tr>
+				<td><img src="/Forum/10/user_IsOffline.gif" alt="qa is not online. Last active: 6/2/2006 11:01:06 AM" border="0"/>&nbsp;<a class="normalTextSmallBold" href="/Forum/10/Forum/User/UserProfile.aspx?UserName=qa">qa</a><br></td>
+			</tr><tr>
+				<td><img src="/Forum/10/users_top25.gif" alt="Top 25 Poster" border="0"/></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Joined:</b> 30 Jun 2004</span></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Total Posts: </b>9</span></td>
+			</tr><tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table></td><td class="forumAlternate" valign="top"><table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td class="forumRowHighlight"><span class="normalTextSmallBold">Re: Couldn't install on laptop from home<a name="15"/></span><br><span class="normalTextSmaller"> Posted: </span><span class="normalTextSmaller">13 Jul 2004 04:18 PM</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmall">and again!</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmaller"></span></td>
+			</tr><tr>
+				<td height="2"></td>
+			</tr><tr>
+				<td colspan="2"><a href="/Forum/10/Forum/AddPost.aspx?PostID=15&amp;mode=flat"><img border="0" src="/Forum/10/newpost.gif"></a></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td class="forumRow" nowrap="nowrap" valign="top" width="150"><table border="0">
+			<tr>
+				<td><img src="/Forum/10/user_IsOffline.gif" alt="qa is not online. Last active: 6/2/2006 11:01:06 AM" border="0"/>&nbsp;<a class="normalTextSmallBold" href="/Forum/10/Forum/User/UserProfile.aspx?UserName=qa">qa</a><br></td>
+			</tr><tr>
+				<td><img src="/Forum/10/users_top25.gif" alt="Top 25 Poster" border="0"/></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Joined:</b> 30 Jun 2004</span></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Total Posts: </b>9</span></td>
+			</tr><tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table></td><td class="forumRow" valign="top"><table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td class="forumRowHighlight"><span class="normalTextSmallBold">Re: Couldn't install on laptop from home<a name="16"/></span><br><span class="normalTextSmaller"> Posted: </span><span class="normalTextSmaller">13 Jul 2004 04:20 PM</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmall">again again again</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmaller"></span></td>
+			</tr><tr>
+				<td height="2"></td>
+			</tr><tr>
+				<td colspan="2"><a href="/Forum/10/Forum/AddPost.aspx?PostID=16&amp;mode=flat"><img border="0" src="/Forum/10/newpost.gif"></a></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td class="forumAlternate" nowrap="nowrap" valign="top"><table border="0">
+			<tr>
+				<td><img src="/Forum/10/user_IsOffline.gif" alt="qa is not online. Last active: 6/2/2006 11:01:06 AM" border="0"/>&nbsp;<a class="normalTextSmallBold" href="/Forum/10/Forum/User/UserProfile.aspx?UserName=qa">qa</a><br></td>
+			</tr><tr>
+				<td><img src="/Forum/10/users_top25.gif" alt="Top 25 Poster" border="0"/></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Joined:</b> 30 Jun 2004</span></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Total Posts: </b>9</span></td>
+			</tr><tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table></td><td class="forumAlternate" valign="top"><table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td class="forumRowHighlight"><span class="normalTextSmallBold">Re: Couldn't install on laptop from home<a name="17"/></span><br><span class="normalTextSmaller"> Posted: </span><span class="normalTextSmaller">13 Jul 2004 04:26 PM</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmall">last time?</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmaller"></span></td>
+			</tr><tr>
+				<td height="2"></td>
+			</tr><tr>
+				<td colspan="2"><a href="/Forum/10/Forum/AddPost.aspx?PostID=17&amp;mode=flat"><img border="0" src="/Forum/10/newpost.gif"></a></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td class="forumRow" nowrap="nowrap" valign="top" width="150"><table border="0">
+			<tr>
+				<td><img src="/Forum/10/user_IsOffline.gif" alt="Rich is not online. Last active: 8/26/2004 10:45:04 PM" border="0"/>&nbsp;<a class="normalTextSmallBold" href="/Forum/10/Forum/User/UserProfile.aspx?UserName=Rich">Rich</a><br></td>
+			</tr><tr>
+				<td><img src="/Forum/10/users_top25.gif" alt="Top 25 Poster" border="0"/></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Joined:</b> 17 Aug 2004</span></td>
+			</tr><tr>
+				<td><span class="normalTextSmaller"><b>Total Posts: </b>1</span></td>
+			</tr><tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table></td><td class="forumRow" valign="top"><table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td class="forumRowHighlight"><span class="normalTextSmallBold">Re: Couldn't install on laptop from home<a name="57"/></span><br><span class="normalTextSmaller"> Posted: </span><span class="normalTextSmaller">26 Aug 2004 10:45 PM</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmall">I couldn't install onto my laptop either.  I got the &quot;installation complete&quot; screen, and after attempting to start from the start&gt;programs&gt;roblox,  I just get a blank IE window, sans menus.
+<br/>
+
+<br/>
+Rich</span></td>
+			</tr><tr>
+				<td colspan="2"><span class="normalTextSmaller"></span></td>
+			</tr><tr>
+				<td height="2"></td>
+			</tr><tr>
+				<td colspan="2"><a href="/Forum/10/Forum/AddPost.aspx?PostID=57&amp;mode=flat"><img border="0" src="/Forum/10/newpost.gif"></a></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td class="forumHeaderBackgroundAlternate" colspan="2" height="20"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td align="left"></td><td align="right"><a class="linkSmallBold" href="javascript:__doPostBack('_ctl1$PostView1$_ctl0$PostList$_ctl10$_ctl2','')">Previous Thread</a>&nbsp;<span class="normalTextSmallBold">::</span>&nbsp;<a class="linkSmallBold" href="javascript:__doPostBack('_ctl1$PostView1$_ctl0$PostList$_ctl10$_ctl3','')">Next Thread</a>&nbsp;</td>
+			</tr>
+		</table></td>
+	</tr>
+</table><span id="_ctl1_PostView1__ctl0_Pager"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td><span class="normalTextSmallBold">Page 1 of 1</span></td>
+	</tr>
+</table></span></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" colspan="2">
+
+    </td>
+  </tr>
+  <tr>
+    <td align="left" colspan="2">
+      <span id="_ctl1_PostView1__ctl0_Whereami2" name="Whereami2">
+<table cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td valign="top" align="left" width="1px">
+            <nobr>
+                <a id="_ctl1_PostView1__ctl0_Whereami2__ctl0_LinkHome" class="linkMenuSink" href="/Forum/10/Forum/Default.aspx">ROBLOX Forum</a>
+            </nobr>
+        </td>
+        <td id="_ctl1_PostView1__ctl0_Whereami2__ctl0_ForumGroupMenu" class="popupMenuSink" valign="top" align="left" width="1px">
+            <nobr>
+                <span id="_ctl1_PostView1__ctl0_Whereami2__ctl0_ForumGroupSeparator" class="normalTextSmallBold">&nbsp;&gt;</span>
+                <a id="_ctl1_PostView1__ctl0_Whereami2__ctl0_LinkForumGroup" class="linkMenuSink" href="/Forum/10/Forum/ShowForumGroup.aspx?ForumGroupID=1">ROBLOX</a>
+            </nobr>
+        </td>
+
+        <td id="_ctl1_PostView1__ctl0_Whereami2__ctl0_ForumMenu" class="popupMenuSink" valign="top" align="left" width="1px">
+            <nobr>
+                <span id="_ctl1_PostView1__ctl0_Whereami2__ctl0_ForumSeparator" class="normalTextSmallBold">&nbsp;&gt;</span>
+                <a id="_ctl1_PostView1__ctl0_Whereami2__ctl0_LinkForum" class="linkMenuSink" href="/Forum/10/Forum/ShowForum.aspx?ForumID=7">Bug Reports (old)</a>
+            </nobr>
+        </td>
+
+        <td id="_ctl1_PostView1__ctl0_Whereami2__ctl0_PostMenu" class="popupMenuSink" valign="top" align="left" width="1px">
+            <nobr>
+                <span id="_ctl1_PostView1__ctl0_Whereami2__ctl0_PostSeparator" class="normalTextSmallBold">&nbsp;&gt;</span>
+                <a id="_ctl1_PostView1__ctl0_Whereami2__ctl0_LinkPost" class="linkMenuSink" href="/Forum/10/Forum/ShowPost.aspx?PostID=10">Couldn't install on laptop from home</a>
+            </nobr>
+        </td>
+
+        <td valign="top" align="left" width="*">&nbsp;</td>
+    </tr>
+</table>
+
+<span id="_ctl1_PostView1__ctl0_Whereami2__ctl0_MenuScript"></span></span>
+    </td>
+  </tr>
+</table>
+</span>
+								</td>
+
+								<td class="CenterColumn">&nbsp;&nbsp;&nbsp;</td>
+								<!-- right margin -->
+								<td class="RightColumn">&nbsp;&nbsp;&nbsp;</td>
+								
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</p>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="PADDING-LEFT: 8px; PADDING-TOP: 12px">
+<hr>
+<div class="Legal" style="TEXT-ALIGN: center">ROBLOX, "Online Building Toy", 
+	characters, logos, names and all related indicia are trademarks of
+	<a id="_ctl1_MasterFooter_HyperLink2" class="Legal" href="/Forum/10/info/About.aspx">ROBLOX Corporation</a>, 
+	
+	2006
+	. Patents pending.
+	<br>
+	<a id="_ctl1_MasterFooter_HyperLink3" class="Legal" href="/Forum/10/info/Privacy.aspx">Privacy Policy</a>&nbsp;|
+	<a href="https://web.archive.org/web/20060622025054/mailto:info@roblox.com" class="Legal">Contact Us</a>&nbsp;|
+	<a id="_ctl1_MasterFooter_HyperLink5" class="Legal" href="/info/">About Us</a><br>
+	Use of this site signifies your acceptance of the
+	<a id="_ctl1_MasterFooter_HyperLink1" class="Legal" href="/Forum/10/info/TermsOfService.aspx">Terms and Conditions</a></div>
+
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWCQKZl8vYBQKyjKDdCgLj1u6zDALpzbycDAL2zbycDAL4tpKIBQL4tpaIBQL/2uGxDQKaxP/GB6F3arpC0z4oB+xCKVfDP64QVQKN"/>
+<script language="javascript" type="text/javascript">window.document.body.topMargin = 0;</script></form>
+	</body>
+</html>
